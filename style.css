@@ -176,13 +176,6 @@ body {
   vertical-align: middle;
 }
 
-/* Trophies */
-.trophy-img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-}
-
 /* Badges */
 .badges {
   display: flex;
