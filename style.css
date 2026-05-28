@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #ffe4f3 0%, #e0f8ff 100%);
+  min-height: 100vh;
+  color: #5d4a6d;
+  overflow-x: hidden;
+}
+
+.bubbles {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 50px 45px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(255, 182, 193, 0.3);
+  border: 8px solid #fff;
+}
+
+/* 头像 */
+.avatar {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #ff9ece;
+  box-shadow: 0 10px 30px rgba(255, 156, 206, 0.4);
+  transition: transform 0.4s;
+}
+
+.avatar:hover img {
+  transform: scale(1.08) rotate(8deg);
+}
+
+.badge {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff9ece;
+  color: white;
+  font-size: 12px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(255, 156, 206, 0.5);
+}
+
+/* 问候语 */
+.greeting h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #ff6bb5;
+}
+
+.greeting a {
+  color: #ff6bb5;
+  text-decoration: none;
+}
+
+.greeting a:hover {
+  text-decoration: underline;
+}
+
+.greeting img {
+  vertical-align: middle;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #8a6fa3;
+  margin-bottom: 25px;
+}
+
+/* 社交链接 */
+.social a {
+  display: inline-block;
+  margin: 0 12px;
+  padding: 10px 20px;
+  background: #ffe4f3;
+  color: #ff6bb5;
+  text-decoration: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.social a:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: #ff9ece;
+  color: white;
+}
+
+/* 关于我 */
+.about {
+  margin: 35px 0;
+  text-align: left;
+  background: #fff0f7;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.about h2 {
+  color: #ff6bb5;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li {
+  padding: 8px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about a {
+  color: #ff6bb5;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+/* 通用 section */
+.section {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.section h2 {
+  color: #ff6bb5;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.section h2 img {
+  vertical-align: middle;
+}
+
+/* Trophies */
+.trophy-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.badges img {
+  height: 28px;
+  border-radius: 6px;
+}
+
+/* 按钮 */
+.btn {
+  background: linear-gradient(45deg, #ff9ece, #c8a2ff);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(255, 156, 206, 0.4);
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 156, 206, 0.5);
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c8a2ff;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* 动画 */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+}
+
+/* 响应式 */
+@media (max-width: 480px) {
+  .card {
+    padding: 35px 25px;
+  }
+
+  .greeting h1 {
+    font-size: 1.4rem;
+  }
+
+  .badges {
+    flex-direction: column;
+    align-items: center;
+  }
+}
