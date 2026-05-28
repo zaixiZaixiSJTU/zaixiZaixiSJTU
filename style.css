@@ -176,18 +176,38 @@ body {
   vertical-align: middle;
 }
 
-/* Badges */
-.badges {
+/* GitHub 统计 */
+.stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 16px;
   margin: 30px 0;
 }
 
-.badges img {
-  height: 28px;
-  border-radius: 6px;
+.stat-item {
+  background: #fff0f7;
+  padding: 12px 22px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #ff6bb5;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-item a {
+  color: #ff6bb5;
+  text-decoration: none;
+}
+
+.stat-item a:hover {
+  text-decoration: underline;
+}
+
+.stat-emoji {
+  font-size: 1.2rem;
 }
 
 /* 按钮 */
