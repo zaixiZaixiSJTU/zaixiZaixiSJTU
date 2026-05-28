@@ -2,6 +2,10 @@
   <h1 align="center">Hi there, I'm <a href="https://github.com/zaixiZaixiSJTU/">zaixiZaixiSJTU</a>. <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> </h1>
 </div>
 
+<div align="center">
+  <img src="https://github.com/zaixiZaixiSJTU/zaixiZaixiSJTU/blob/output/github-contribution-grid-snake.svg" width=100% />
+</div>
+
 - 📚 I'm currently studying at Shanghai Jiao Tong University
 - 💻 I'm passionate about **Rust**, **Python**, and open-source projects
 - 📫 Contact me via [GitHub Issues](https://github.com/zaixiZaixiSJTU/zaixiZaixiSJTU/issues)
